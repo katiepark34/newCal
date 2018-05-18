@@ -1,0 +1,92 @@
+
+.monthNow{
+	color: black;
+	text-align:center;
+	font-size: 30px;
+}
+
+.dayNow{
+	border:5px solid black;
+	color: black;
+	text-align:center;
+	font-size:30px;
+}
+
+.calendar td{
+	htmlContent:30px;
+	width: 500px;
+}
+
+.monthNow th{
+	background-color:#42f49b;
+	color:black;
+	text-align:center;
+	height:100px;
+	font-size: 40px;
+
+}
+
+.dayNames{
+	background: yellow;
+	color: black;
+	text-align:center;
+}
+
+h1{
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 60px;
+	color: #f44242;
+	text-align:center;
+
+}
+
+body{
+	background: url("../images/happy.jpg");
+}
+
+.happy {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+
+
+.happy h3 {
+ font-size: 3em;
+ color: #f441a3;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+
+ -moz-animation: happy 15s linear infinite;
+ -webkit-animation: happy 15s linear infinite;
+ animation: happy 15s linear infinite;
+}
+
+@-moz-keyframes happy {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes happy {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes happy {
+ 0%   { 
+ -moz-transform: translateX(100%); 
+ -webkit-transform: translateX(100%);
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
